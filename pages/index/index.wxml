@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:elif="{{user[0]}}">
+      <block wx:for="{{user}}" wx:for-item="itemName" style="display:inline">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{itemName.avatar}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{itemName.nickname}}</text>
+      </block>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{ acolor || 'red' }}" current="1" bindchange="changecolor">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper-item {{item}}" src="https://yzbtimg.guangmaidata.com/images/266/2020/01/BItnjSJ4k44AN1Nn19AWSk5nWt35ZW.png"></image>
+      </swiper-item>
+    </block>
+    </swiper>
+  </view>
+  <view class="bind-footer">
+    <view class="btn-binding" bindtap="getTruth">更换头像</view>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.btn{
+  color: #eeeeee;
+  background-color: #07c160;
+}
+.container{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.btn-binding{
+  margin-top: 100rpx;
+  background-color: #07c160;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 15rpx;
+  width: 100%;
+}
+.bind-footer{
+  position: fixed;
+  bottom: 60rpx;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;  
+}
+.banner{
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.banner swiper{
+  height: 800rpx;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.demo-text-1{
+  border-top:1px solid rgba(240, 54, 54, 0.842);
+  border-bottom:1px solid rgba(240, 54, 54, 0.842);
+}
+.demo-text-2{
+  border-top:1px solid rgb(102, 233, 131);
+  border-bottom:1px solid rgb(102, 233, 131);
+}
+.demo-text-3{
+  border-top:1px solid  rgb(166, 81, 235);
+  border-bottom:1px solid  rgb(166, 81, 235);
+}
