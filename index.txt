@@ -1,2 +1,3 @@
 echo PHP中文网
+echo 妈的劳资写的东西呢
 echo 666;die;
