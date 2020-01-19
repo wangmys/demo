@@ -1,2 +1,2 @@
-
+echo PHP中文网
 echo 666;die;
