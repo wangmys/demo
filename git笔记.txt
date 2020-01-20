@@ -1,0 +1,95 @@
+
+1.git diff 命令显示已写入缓存与已修改但尚未写入缓存的改动的区别
+
+2.尚未缓存的改动
+git diff
+
+2.查看已缓存的改动
+git diff --cached
+
+3.查看已缓存与未缓存的所有改动
+git diff HEAD
+
+4.显示摘要而非整个diff
+git diff --stat
+
+5.git命令取消已暂存的文件
+git rm --cached index.php
+
+6.从缓存区中删除文件
+git rm --cached filename
+
+7.从暂存区以及硬盘中删除文件
+git rm filename
+
+8.修改暂存区的文件名
+git mv oldfile newfile
+
+9.创建分支
+git branch (branchname)
+
+10.切换分支
+git checkout branchname
+
+11.合并分支
+git merge branchbane
+
+11.创建分支并切换到该分支
+git checkout -b (branchname)
+
+12.删除分支命令
+git branch -d (branchname)
+
+13.分支合并
+git merge branchname
+
+14.查看指定用户的提交记录
+git log --author=uname --oneline -5
+
+15.添加标签备注
+git tag -a v1.0
+
+16.查看标签记录
+git log --decorate
+
+17.简便查看标签记录
+git log --oneline --decorate --graph
+
+18.追加标签
+git tag -a v0.9 85fc7e7(版本序号)
+
+19.查看所有标签
+git tag
+
+
+20.生成ssh key
+ssh-keygen -t rsa -C "1664747641@qq.com"
+
+//进~/.ssh目录,打开id_rsa.pub文件并复制内容(如果没有.ssh目录那么就用手动创建 mkdir ~/.ssh)
+cd ~/.ssh
+
+21.查看当前配置的所有的远程仓库(别名)
+git remote 
+
+查看远程仓库的实际链接地址
+git remote -v
+
+22.添加远程仓库
+git remote add name(本地别名) url(远程地址)
+
+23.推送本地代码至远程仓库
+git push -u demo2(仓库别名)  master(推送的分支名)
+
+24.从远程仓库下载新分支与数据
+
+git fetch
+git merge demo(远程仓库别名)/master (合并到哪个分支)
+该命令执行完后需要执行git merge 远程分支到你所在的分支。
+
+25.从远端仓库提取数据并尝试合并到当前分支
+git pull demo/master
+
+26.删除远程仓库
+git remote rm demo(仓库别名)
+
+
